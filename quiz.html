@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            box-shadow: 0px -2px 6px gray;
+            height: 35px;
+            border-radius: 2px;
+        }
+        .box:hover{
+            background-color: chartreuse;
+        }
+        label {
+            margin: 10px;
+        }
+        input{
+            margin: 10px;
+        }
+        .main {
+            display: flex;
+           width: 100%;
+           height: 100vh;
+           background-color: yellow;
+            justify-content: center;
+            align-items: center;
+        
+           
+        }
+        .container{
+            padding: 10px;
+            height: 260px;
+            width: 500px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(237, 247, 247);
+            border-radius: 2px;
+        }
+        #questionbox{
+            padding-left: 20px;
+        }
+        #submit{
+            height: 30px;
+            width: 250px;
+            background-color: rgb(64, 250, 8);
+            color: black;
+            border-radius: 10px;
+           position: absolute;
+            
+
+        }
+
+    </style>
+</head> 
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="col" >
+                <h3 id="questionBox">This is question</h3>
+            </div>  <br>
+        <div class="col box">
+            <input type="radio" name="option" id="first" value="a" required>
+            <label for="first">Option1</label>
+        </div>
+        <div class="col box">
+            <input type="radio" name="option" id="second" value="b" required>
+            <label for="second">Option2</label>
+        </div>
+        <div class="col box">
+            <input type="radio" name="option" id="third" value="c" required>
+            <label for="third">Option3</label>
+        </div>
+        <div class="col box">
+            <input type="radio" name="option" id="four" value="d" required>
+            <label for="forth">Option4</label>
+        </div>   <br>
+        <button type="submit" style="margin-left: 100px;" id="submit" type="submit" onclick="submitQuiz()">submit</button>
+    </div>
+</div>
+        <script src="./quiz.js"></script>
+</body>
+
+
+</html>

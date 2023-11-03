@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interest</title>
+    <link rel="stylesheet" href="interest.css">
+</head>
+<body>
+    <div>
+    <h1>Interest Calculator</h1>
+    <form onsubmit="return false">
+        <label for="Investment">Total Investment: </label>
+        <input type="text" id="amount"><br><br>
+        <label for="Years">Time Period:  </label>
+        <input type="text" id="years"><br><br>
+        <input type="submit" id="FD" value="FD" onclick="fd(amount.value,years.value)">
+        <input type="submit" id="PO" value="PO" onclick="po(amount.value,years.value)">
+        <input type="submit" id="SSX" value="SENSEX" onclick="ssx(amount.value,years.value)">
+        <input type="submit" id="LIC" value="LIC" onclick="lic(amount.value,years.value)">
+        <input type="submit" ID="PPF" value="PPF" onclick="ppf(amount.value,years.value)">
+    </form>
+    </div>
+    <label for="output" id="demo"></label>
+    <script src="./interest.js"></script>
+</body>
+</html>
